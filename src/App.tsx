@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <header className="text-black">Blog</header>
-      <div className="card">
+      <div>
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
