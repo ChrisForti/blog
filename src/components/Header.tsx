@@ -1,7 +1,10 @@
+import { Navigation } from "./Navigation";
+
 export function Header() {
   return (
-    <header className="relative isolate overflow-hidden bg-gray-900">
-      <nav className="rounded border border-gray-200 bg-white px-2 py-2.5 shadow sm:px-4 dark:border-gray-700 dark:bg-gray-800">
+    <header className="relative isolate overflow-hidden bg-gray-900 p-6">
+      <Navigation />
+      {/* <nav className="rounded border border-gray-200 bg-white px-2 py-2.5 shadow sm:px-4 dark:border-gray-700 dark:bg-gray-800">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <a href="/" className="flex items-center">
             <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
@@ -16,7 +19,7 @@ export function Header() {
               className="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             >
               <span className="sr-only">Open main menu</span>
-              {/* <!-- Hamburger icon --> */}
+              
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -79,16 +82,16 @@ export function Header() {
             </ul>
           </div>
         </div>
-      </nav>
-
-      <script>
-        {/* const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  menuToggle.addEventListener('click', function () {
-    mobileMenu.classList.toggle('hidden');
-  });*/}
-      </script>
+      </nav> */}
     </header>
   );
 }
+
+//     <script>
+//       const menuToggle = document.getElementById('menu-toggle');
+// const mobileMenu = document.getElementById('mobile-menu');
+
+// menuToggle.addEventListener('click', function () {
+//   mobileMenu.classList.toggle('hidden');
+// });
+//     </script>
