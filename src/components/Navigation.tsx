@@ -6,6 +6,9 @@ export function Navigation() {
           <span className="self-center whitespace-nowrap text-4xl font-semibold dark:text-white">
             Code Vessel
           </span>
+          <span className="m-6 self-center whitespace-nowrap text-4xl font-semibold dark:text-white">
+            Blog
+          </span>
         </a>
 
         <div className="flex items-center">
