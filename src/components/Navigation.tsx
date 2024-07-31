@@ -1,37 +1,13 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const menuToggle = () => {
-    setIsOpen(!isOpen);
-  };
+  // const menuToggle = () => {
+  //   setIsOpen(!isOpen);
+  // };
   return (
     <nav className="border-gray-200 bg-white px-4 py-2.5 shadow sm:px-4 dark:border-gray-700 dark:bg-gray-800">
-      <div>
-        <button
-          onClick={menuToggle}
-          type="button"
-          className="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        >
-          <span className="sr-only">Open main menu</span>
-          {/* <!-- Hamburger icon --> */}
-          <svg
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
-        </button>
-      </div>
-
       <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
         <ul className="mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium">
           <li>
