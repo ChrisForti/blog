@@ -13,9 +13,7 @@ export function Header() {
         <span className="whitespace-nowrap text-4xl font-semibold dark:text-white">
           Code Vessel
         </span>
-        <span className="m-6 self-center whitespace-nowrap text-4xl font-semibold dark:text-white">
-          Blog
-        </span>
+        <span className="m-6 text-4xl font-semibold dark:text-white">Blog</span>
       </a>
       <button
         onClick={menuToggle}
@@ -38,38 +36,7 @@ export function Header() {
           />
         </svg>
       </button>
-      <div>
-        <nav className="flex items-center">
-          <ul className="hidden items-center space-x-4 sm:flex">
-            <li>
-              <a
-                href="#"
-                className="text-md from-indigo-600 to-green-600 hover:text-indigo-600"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-md from-indigo-600 to-green-600 hover:text-indigo-600"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-md from-indigo-600 to-green-600 hover:text-indigo-600"
-              >
-                Posts
-              </a>
-            </li>
-          </ul>
 
-          <div className="ml-8 hidden items-center space-x-4 md:flex lg:ml-12"></div>
-        </nav>
-      </div>
       <Navigation />
     </header>
   );
