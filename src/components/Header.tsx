@@ -16,11 +16,11 @@ export function Header() {
         <span className="m-6 self-center whitespace-nowrap text-4xl font-semibold dark:text-white">
           Blog
         </span>
-      </a>{" "}
+      </a>
       <button
         onClick={menuToggle}
         type="button"
-        className="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        className="ml-3 inline-flex rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       >
         <span className="sr-only">Open main menu</span>
         {/* <!-- Hamburger icon --> */}
