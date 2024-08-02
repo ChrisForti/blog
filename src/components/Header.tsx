@@ -9,9 +9,8 @@ export function Header() {
   };
   return (
     <header className="p-6container relative isolate mx-auto flex flex-wrap items-center justify-between overflow-hidden bg-gray-900">
-      export function Header()
       <a href="/" className="flex items-center">
-        <span className="self-center whitespace-nowrap text-4xl font-semibold dark:text-white">
+        <span className="whitespace-nowrap text-4xl font-semibold dark:text-white">
           Code Vessel
         </span>
         <span className="m-6 self-center whitespace-nowrap text-4xl font-semibold dark:text-white">
