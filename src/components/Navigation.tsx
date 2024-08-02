@@ -7,11 +7,11 @@ export function Navigation() {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="border-gray-200 bg-white px-4 py-2.5 shadow sm:px-4 dark:border-gray-700 dark:bg-gray-800">
+    <nav className="border-gray-200 bg-white px-4 py-2.5 shadow sm:px-4 dark:bg-gray-800">
       <button
         onClick={menuToggle}
         type="button"
-        className="ml-3 inline-flex rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        className="ml-3 inline-flex rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700"
       >
         <span className="sr-only">Open main menu</span>
         {/* <!-- Hamburger icon --> */}
@@ -29,7 +29,7 @@ export function Navigation() {
           />
         </svg>
       </button>
-      <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
+      <div onClick={menuToggle} className="hidden w-full md:block md:w-auto">
         <ul className="mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium">
           <li>
             <a
@@ -42,7 +42,7 @@ export function Navigation() {
           </li>
           <li>
             <a
-              href="#"
+              href="./About"
               className="block border-b border-gray-100 py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-50 md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
             >
               About
