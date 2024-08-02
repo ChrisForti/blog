@@ -29,7 +29,6 @@ export function Navigation() {
           />
         </svg>
       </button>
-
       <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
         <ul className="mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium">
           <li>
