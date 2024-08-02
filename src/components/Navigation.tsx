@@ -7,11 +7,11 @@ export function Navigation() {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="border-gray-200 bg-white px-4 py-2.5 shadow sm:px-4 dark:bg-gray-800">
+    <nav className="border-gray-200 bg-gray-900 px-4 py-2.5 shadow sm:px-4">
       <button
         onClick={menuToggle}
         type="button"
-        className="ml-3 inline-flex rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700"
+        className="ml-3 inline-flex rounded-lg p-2 text-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700"
       >
         <span className="sr-only">Open main menu</span>
         {/* <!-- Hamburger icon --> */}

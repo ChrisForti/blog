@@ -2,12 +2,11 @@ import { Navigation } from "./Navigation";
 
 export function Header() {
   return (
-    <header className="p-6container relative isolate mx-auto flex flex-wrap items-center justify-between overflow-hidden bg-gray-900">
+    <header className="p-5container relative mx-auto flex flex-wrap items-center justify-between overflow-hidden bg-gray-900">
       <a className="flex items-center">
-        <span className="whitespace-nowrap text-4xl font-semibold dark:text-white">
-          Code Vessel
+        <span className="m-6 whitespace-nowrap text-4xl font-semibold dark:text-white">
+          Code Vessel Blog
         </span>
-        <span className="m-6 text-4xl font-semibold dark:text-white">Blog</span>
       </a>
       <Navigation />
     </header>
