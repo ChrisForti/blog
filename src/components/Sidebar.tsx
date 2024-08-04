@@ -19,7 +19,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
   return (
     <>
       <button
-        className="rounded-m absolute right-8 top-6 bg-gradient-to-tr from-indigo-600 to-green-600 bg-clip-text p-2 font-bold text-transparent md:hidden"
+        className="rounded-m absolute right-8 top-6 border-black bg-white bg-gradient-to-tr bg-clip-text p-2 font-bold text-transparent md:hidden"
         onClick={toggleSidebar}
       >
         Sidebar
@@ -27,7 +27,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
       <aside
         className={
           (isOpen ? "block" : "hidden") +
-          " absolute left-0 top-20 z-50 w-64 bg-black p-4 text-white md:static md:block"
+          " absolute left-0 top-20 z-50 w-64 bg-white p-4 text-white md:static md:block"
         }
       >
         <div className="mx-auto flex items-center justify-around rounded-lg bg-white px-1">
@@ -38,7 +38,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
           />
           <span className="bg-gray-100 text-black">
             {/* <!-- Hamburger icon --> */}
-            <svg
+            {/* <svg
               className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
@@ -50,7 +50,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
                 stroke-width="2"
                 d="M4 6h16M4 12h16m-7 6h7"
               />
-            </svg>
+            </svg> */}
           </span>
         </div>
         <div className="rounded-md bg-white">
