@@ -1,13 +1,20 @@
 import "./index.css";
 import { Mainpage } from "./components/Mainpage";
 import { Header } from "./components/Header";
+import { Sidebar } from "./components/Sidebar";
+import { useState } from "react";
 
 export default function App() {
+  const [selectedPost, setSelectedPost] = useState(0);
+
   return (
     <>
       <div>
-        <Header />
-        <Mainpage />
+        <Header setHeaderNavigation={setSelectedPost} />
+        <div className="flex">
+          <Sidebar setSelectedPost={setSelectedPost} />
+          <Mainpage selectedPost={selectedPost} />
+        </div>
       </div>
     </>
   );

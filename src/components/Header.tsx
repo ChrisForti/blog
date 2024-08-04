@@ -1,5 +1,3 @@
-import { Navigation } from "./Navigation";
-
 type HeaderProps = {
   setHeaderNavigation: React.Dispatch<React.SetStateAction<number>>;
 };
@@ -17,7 +15,6 @@ export function Header({ setHeaderNavigation }: HeaderProps) {
           Code Vessel Blog
         </span>
       </button>
-      <Navigation setSelectedPost={setSelectedPost} />
     </header>
   );
 }
