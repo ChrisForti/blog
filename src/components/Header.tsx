@@ -12,18 +12,19 @@ export function Header({ setHeaderNavigation }: HeaderProps) {
         className="flex items-center"
       >
         <span className="m-6 whitespace-nowrap text-4xl font-semibold dark:text-white">
-          Code Vessel Blog
+          <a href="/Mainpage">Code Vessel Blog</a>
         </span>
       </button>
+      <ul>
+        <li
+          onClick={() => {
+            setHeaderNavigation(0);
+          }}
+          className="text-white"
+        >
+          <a href="/Mainpage">Home</a>
+        </li>
+      </ul>
     </header>
   );
 }
-
-//     <script>
-//       const menuToggle = document.getElementById('menu-toggle');
-// const mobileMenu = document.getElementById('mobile-menu');
-
-// menuToggle.addEventListener('click', function () {
-//   mobileMenu.classList.toggle('hidden');
-// });
-//     </script>
