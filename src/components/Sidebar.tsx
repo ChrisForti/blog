@@ -19,7 +19,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
   return (
     <>
       <button
-        className="rounded-m absolute right-20 top-6 border-black bg-white bg-gradient-to-tr bg-clip-text p-2 font-bold text-transparent text-white md:hidden"
+        className="rounded-m absolute right-20 top-11 border-black bg-white bg-clip-text p-2 font-bold text-white md:hidden"
         onClick={toggleSidebar}
       >
         <svg
@@ -39,7 +39,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
       <aside
         className={
           (isOpen ? "block" : "hidden") +
-          " absolute left-0 top-20 z-50 w-64 bg-white p-4 text-white md:static md:block"
+          " top-22 absolute left-0 z-50 w-64 bg-white p-4 text-white md:static md:block"
         }
       >
         <div className="mx-auto flex items-center justify-around rounded-lg bg-white px-1">
