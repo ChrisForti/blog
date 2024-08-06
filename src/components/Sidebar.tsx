@@ -19,10 +19,22 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
   return (
     <>
       <button
-        className="rounded-m absolute right-20 top-6 border-black bg-white bg-gradient-to-tr bg-clip-text p-2 font-bold text-transparent md:hidden"
+        className="rounded-m absolute right-20 top-6 border-black bg-white bg-gradient-to-tr bg-clip-text p-2 font-bold text-transparent text-white md:hidden"
         onClick={toggleSidebar}
       >
-        Sidebar
+        <svg
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
       </button>
       <aside
         className={
@@ -36,22 +48,6 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
             placeholder="seach"
             className="w-full rounded-md bg-gray-100 p-2 outline-none ring-indigo-700"
           />
-          <span className="bg-gray-100 text-black">
-            {/* <!-- Hamburger icon --> */}
-            {/* <svg
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg> */}
-          </span>
         </div>
         <div className="rounded-md bg-white">
           <h1 className="my-4 cursor-pointer rounded-md border-b-2 bg-white py-2 text-center text-xl text-gray-600">
