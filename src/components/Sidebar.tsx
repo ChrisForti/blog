@@ -19,7 +19,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
   return (
     <>
       <button
-        className="rounded-m absolute right-8 top-6 border-black bg-white bg-gradient-to-tr bg-clip-text p-2 font-bold text-transparent md:hidden"
+        className="rounded-m absolute right-20 top-6 border-black bg-white bg-gradient-to-tr bg-clip-text p-2 font-bold text-transparent md:hidden"
         onClick={toggleSidebar}
       >
         Sidebar
