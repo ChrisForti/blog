@@ -11,16 +11,16 @@ export function Header({ setHeaderNavigation }: HeaderProps) {
         }}
         className="flex items-center"
       >
-        <span className="m-6 whitespace-nowrap text-4xl font-semibold dark:text-white">
+        <span className="m-6 text-4xl font-semibold dark:text-white">
           <a href="/Mainpage">Code Vessel Blog</a>
         </span>
       </button>
       <ul>
         <li
+          className="text-white"
           onClick={() => {
             setHeaderNavigation(0);
           }}
-          className="text-white"
         >
           <a href="/Mainpage">Home</a>
         </li>
