@@ -19,7 +19,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
   return (
     <>
       <button
-        className="rounded-m absolute right-20 top-11 border-black bg-white bg-clip-text p-2 font-bold text-white md:hidden"
+        className="rounded-m absolute right-20 top-12 border-black bg-white bg-clip-text p-2 font-bold text-white md:hidden"
         onClick={toggleSidebar}
       >
         <svg
