@@ -1,5 +1,5 @@
-import Willray from "../assets/Will.png";
-import Mikelat from "../assets/Mike.png";
+import Willray from "../assets/CvLogo.png";
+import Mikelat from "../assets/CvLogo.png";
 import Chrisf from "../assets/Chris.png";
 
 export type PostData = {
