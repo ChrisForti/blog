@@ -3,6 +3,7 @@ import { Mainpage } from "./components/Mainpage";
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
 import { useState } from "react";
+import { Footer } from "./components/Footer";
 
 export default function App() {
   const [selectedPost, setSelectedPost] = useState(0);
@@ -15,6 +16,7 @@ export default function App() {
           <Sidebar setSelectedPost={setSelectedPost} />
           <Mainpage selectedPost={selectedPost} />
         </div>
+        <Footer />
       </div>
     </>
   );
