@@ -19,7 +19,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
   return (
     <>
       <button
-        className="absolute right-20 top-12 border-black bg-white bg-clip-text p-2 font-bold text-white md:hidden"
+        className="absolute right-20 top-12 border-black bg-white bg-clip-text p-2 font-bold text-teal-300 md:hidden"
         onClick={toggleSidebar}
       >
         <svg
@@ -59,7 +59,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
               return (
                 <li
                   key={uuidv4()}
-                  className="text-1xl border-b-2 bg-gradient-to-tr from-indigo-600 to-green-600 bg-clip-text py-3 font-bold text-transparent hover:cursor-pointer"
+                  className="text-1xl border-b-2 bg-gradient-to-tr from-teal-300 to-teal-300 bg-clip-text py-3 font-bold text-transparent hover:cursor-pointer"
                   onClick={() => {
                     selectPost(postNumber);
                   }}
