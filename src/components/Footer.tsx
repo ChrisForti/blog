@@ -11,8 +11,8 @@ export function Footer() {
               <img
                 className="rounded-full"
                 src={Mylogo}
-                width="40"
-                height="40"
+                width="50"
+                height="50"
               />
             </div>
             <p className="mt-4 text-center text-sm text-gray-400 lg:mt-0 lg:text-right">
