@@ -8,6 +8,7 @@ type SidebarProps = {
 
 export function Sidebar({ setSelectedPost }: SidebarProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   function toggleSidebar() {
     setIsOpen(!isOpen);
@@ -16,6 +17,12 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
   function selectPost(selection: number) {
     setSelectedPost(selection);
   }
+
+  // this is broken
+  // const filteredPosts = data.filter((post) =>
+  //   post.toLowerCase().includes(searchTerm.toLowerCase()),
+  // );
+
   return (
     <>
       <button
@@ -45,8 +52,10 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
         <div className="mx-auto flex items-center justify-around rounded-lg bg-white px-1">
           <input
             type="text"
-            placeholder="seach"
-            className="w-full rounded-md bg-gray-100 p-2 outline-none ring-indigo-700"
+            placeholder="search posts"
+            className="w-full rounded-md bg-gray-900 p-2 outline-none"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
         <div className="rounded-md bg-white">
@@ -59,7 +68,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
               return (
                 <li
                   key={uuidv4()}
-                  className="text-1xl border-b-2 bg-gradient-to-tr from-teal-300 to-teal-300 bg-clip-text py-3 font-bold text-transparent hover:cursor-pointer"
+                  className="text-1xl border-b-2 bg-clip-text py-3 font-bold text-gray-600 hover:cursor-pointer"
                   onClick={() => {
                     selectPost(postNumber);
                   }}
