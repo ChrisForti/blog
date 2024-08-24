@@ -18,15 +18,21 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
     setSelectedPost(selection);
   }
 
-  // this is broken
-  // const filteredPosts = data.filter((post) =>
-  //   post.toLowerCase().includes(searchTerm.toLowerCase()),
-  // );
+  // const filterPostsBySearchTerm = (
+  //   data: PostData[],
+  //   searchTerm: string,
+  // ): PostData[] => {
+  //   // Ensure the search term is a string and not empty.
+  //   const lowercasedSearchTerm = searchTerm.toLowerCase();
+  //   return data.filter((post) =>
+  //     post.title.toLowerCase().includes(lowercasedSearchTerm),
+  //   );
+  // };
 
   return (
     <>
       <button
-        className="absolute right-20 top-12 border-black bg-white bg-clip-text p-2 font-bold text-teal-300 md:hidden"
+        className="absolute right-20 top-12 border-black bg-white bg-clip-text p-2 font-bold text-teal-500 md:hidden"
         onClick={toggleSidebar}
       >
         <svg
@@ -68,7 +74,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
               return (
                 <li
                   key={uuidv4()}
-                  className="text-1xl border-b-2 bg-clip-text py-3 font-bold text-gray-600 hover:cursor-pointer"
+                  className="text-1xl border-b-2 bg-clip-text py-3 font-bold text-teal-500 hover:cursor-pointer"
                   onClick={() => {
                     selectPost(postNumber);
                   }}
