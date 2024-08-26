@@ -1,6 +1,6 @@
-# Code Vessel Blog
+# Code & Keel Blog
 
-This is a react typescript blog that utillizes markdown files for post entries. Which, essentially I am going to use for my code vessel domain.
+This is a react typescript blog that dynamically renders markdown, for the post entries. Also built a [markdown-parser](https://github.com/ChrisForti/markdown-parser) to parse the markdown so it can be renedered.
 
 ## Built with
 
