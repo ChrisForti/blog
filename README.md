@@ -1,6 +1,6 @@
 # Code & Keel Blog
 
-This is a react typescript blog that dynamically renders markdown, for the post entries. Also built a [markdown-parser](https://github.com/ChrisForti/markdown-parser) to parse the markdown so it can be renedered.
+This is a react typescript blog that dynamically renders markdown, as post entries. Which will then save old post entries in json format. Which in turn required us to build a [markdown-parser](https://github.com/ChrisForti/markdown-parser) to parse the markdown so it can be renedered from the json format.
 
 ## Built with
 
