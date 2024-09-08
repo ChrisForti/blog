@@ -11,6 +11,8 @@ export function Post({ post }: PostProps) {
     date: dateString,
     slug,
     tags,
+    authorImage,
+    author,
     imageUrl,
   } = post.metadata;
   const date = new Date(dateString);
@@ -22,7 +24,11 @@ export function Post({ post }: PostProps) {
           <h1 className="text-2xl font-semibold capitalize text-gray-800 lg:text-3xl dark:text-white">
             From the blog
           </h1>
-
+          <p className="text-sm text-gray-700 dark:text-gray-200">
+            {description}
+          </p>
+          <p className="text-sm text-gray-700 dark:text-gray-200">{tags}</p>
+          <p className="text-sm text-gray-700 dark:text-gray-200">{slug}</p>
           <div className="mt-8 flex flex-col items-center lg:-mx-6">
             {/* Image of the blog post */}
             <img
@@ -50,16 +56,19 @@ export function Post({ post }: PostProps) {
 
               {/* Author information */}
               <div className="mt-6 flex items-center">
-                {/* <img
+                <img
                   className="h-10 w-10 rounded-full object-cover object-center"
-                  src={post.authorImage}
+                  src={authorImage}
                   alt=""
-                /> */}
+                />
 
                 <div className="mx-4">
-                  <h1 className="text-sm text-gray-700 dark:text-gray-200">
-                    To do add author
-                  </h1>
+                  <p className="text-sm text-gray-700 dark:text-gray-200">
+                    {author}
+                  </p>
+                  <p className="text-sm text-gray-700 dark:text-gray-200">
+                    {published}
+                  </p>
                 </div>
               </div>
             </div>
