@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { data } from "../content/content";
+import { data } from "../posts/posts";
 import { v4 as uuidv4 } from "uuid";
 
 type SidebarProps = {
