@@ -1,4 +1,5 @@
-import { type PostData } from "../content/content";
+import { type PostData } from "../posts/posts";
+import underdogLogo from "../assets/underdog.jpg";
 
 type PostPreviewProps = {
   post: PostData;
