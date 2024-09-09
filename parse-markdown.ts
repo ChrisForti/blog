@@ -11,7 +11,7 @@ type Metadata = {
   date: Date;
   slug: string;
   author: string;
-  authorimageUrl: string;
+  authorImage: string;
   tags?: string[];
   imageUrl?: string;
 };
@@ -89,8 +89,17 @@ function validateMetadata(metadata: unknown, fileName: string) {
     return false;
   }
 
-  const { published, title, description, date, slug, tags, imageUrl } =
-    metadata as Metadata;
+  const {
+    published,
+    title,
+    description,
+    author,
+    authorImage,
+    date,
+    slug,
+    tags,
+    imageUrl,
+  } = metadata as Metadata;
   try {
     if (typeof published !== "boolean") {
       throw new Error(
@@ -125,6 +134,26 @@ function validateMetadata(metadata: unknown, fileName: string) {
     ) {
       throw new Error(
         "\x1b[31mimageUrl must be an absolute URL or a path starting with /\nExample: /images/my-image.jpg for image in public folder\nOr: https://example.com/image.jpg for an external image\x1b[0m",
+      );
+    }
+    if (typeof author !== "string") {
+      throw new Error(
+        "\x1b[31mThe markdown must contain a valid author.	\x1b[0m",
+      );
+    }
+    if (
+      authorImage &&
+      !authorImage.startsWith("http://") &&
+      !authorImage.startsWith("https://") &&
+      !authorImage.startsWith("/")
+    ) {
+      throw new Error(
+        "\x1b[31mimageUrl must be an absolute URL or a path starting with /\nExample: /images/my-image.jpg for image in public folder\nOr: https://example.com/image.jpg for an external image\x1b[0m",
+      );
+    }
+    if (authorImage === null) {
+      throw new Error(
+        "\x1b[31mauthorImage must be a string must be a string\x1b[0m",
       );
     }
   } catch (error) {
