@@ -58,6 +58,7 @@ export function PostPreview(props: PostPreviewProps) {
             <p className="text-sm text-gray-700 dark:text-gray-200">
               {published}
             </p>
+            <p className="text-sm text-gray-700 dark:text-gray-200">{tags}</p>
           </div>
         </div>
       </div>

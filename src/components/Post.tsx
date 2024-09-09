@@ -34,9 +34,7 @@ export function Post({ post }: PostProps) {
             <img
               className="h-72 w-full rounded-xl object-cover lg:mx-6 lg:h-96"
               src={imageUrl ? imageUrl : underdogLogo}
-              alt=""
             />
-
             <div className="mt-6 lg:mx-6 lg:mt-0">
               {/* Date of the blog post */}
               <p className="text-sm text-gray-500 dark:text-gray-300">
@@ -68,6 +66,9 @@ export function Post({ post }: PostProps) {
                   </p>
                   <p className="text-sm text-gray-700 dark:text-gray-200">
                     {published}
+                  </p>
+                  <p className="text-sm text-gray-700 dark:text-gray-200">
+                    {tags}
                   </p>
                 </div>
               </div>
