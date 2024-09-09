@@ -97,7 +97,6 @@ function validateMetadata(metadata: unknown, fileName: string) {
     authorImage,
     date,
     slug,
-    tags,
     imageUrl,
   } = metadata as Metadata;
   try {
