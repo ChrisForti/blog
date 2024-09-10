@@ -1,17 +1,29 @@
-import { type PostData } from "../content/content";
+import { type PostData } from "../posts/posts";
+import underdogLogo from "../assets/underdog.jpg";
 
 type PostPreviewProps = {
   post: PostData;
+  postIndex: number;
 };
 
 export function PostPreview(props: PostPreviewProps) {
-  const { postImage, authorImage, content, title, author, publishedDate } =
-    props.post;
+  const {
+    title,
+    tags,
+    published,
+    description,
+    slug,
+    imageUrl,
+    authorImage,
+    author,
+    date: dateString,
+  } = props.post.metadata;
+  const date = new Date(dateString);
   return (
     <div className="flex flex-col text-gray-700">
       <div className="relative m-0 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
         <img
-          src={postImage}
+          src={imageUrl ? imageUrl : underdogLogo}
           alt="Revolutionizing Our Production Process"
           className="h-full w-full object-cover"
         />
@@ -26,9 +38,11 @@ export function PostPreview(props: PostPreviewProps) {
         >
           {title}
         </a>
+        <p className="text-sm text-gray-700 dark:text-gray-200">{slug}</p>
         <p className="mb-8 block font-sans text-base font-normal leading-relaxed !text-gray-500 text-inherit antialiased">
-          {content}
+          {description}
         </p>
+        <p className="text-sm text-gray-700 dark:text-gray-200">{tags}</p>
         <div className="flex items-center gap-4">
           <img
             src={authorImage}
@@ -39,8 +53,12 @@ export function PostPreview(props: PostPreviewProps) {
               {author}
             </p>
             <p className="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
-              {publishedDate.toDateString()}
+              {date.toDateString()}
             </p>
+            <p className="text-sm text-gray-700 dark:text-gray-200">
+              {published}
+            </p>
+            <p className="text-sm text-gray-700 dark:text-gray-200">{tags}</p>
           </div>
         </div>
       </div>

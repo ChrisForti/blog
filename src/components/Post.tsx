@@ -1,94 +1,81 @@
-import type { PostData } from "../content/content";
+import type { PostData } from "../posts/posts";
+import underdogLogo from "../assets/underdog.jpg";
 
 type PostProps = { post: PostData };
 
 export function Post({ post }: PostProps) {
+  const {
+    title,
+    description,
+    published,
+    date: dateString,
+    slug,
+    tags,
+    authorImage,
+    author,
+    imageUrl,
+  } = post.metadata;
+  const date = new Date(dateString);
   return (
-    <main className="text-black">
-      <h2 className="p-2 text-xl">{post.author}</h2>
-      <h2 className="p-2">{new Date().toLocaleDateString()}</h2>
-      <h2 className="p-2">{post.title}</h2>
-      <em className="p-3 text-indigo-700">{post.content}</em>
-      <h1 className="text p-4 text-5xl">What is Lorem Ipsum?</h1>
-      <p>
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It
-        has roots in a piece of classical Latin literature from 45 BC, making it
-        over 2000 years old. Richard McClintock, a Latin professor at
-        Hampden-Sydney College in Virginia, looked up one of the more obscure
-        Latin words, consectetur, from a Lorem Ipsum passage, and going through
-        the cites of the word in classical literature, discovered the
-        undoubtable source.
-      </p>
-      <br />
-      <p>
-        Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus
-        Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written
-        in 45 BC. This book is a treatise on the theory of ethics, very popular
-        during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum
-        dolor sit amet..", comes from a line in section 1.10.32.
-      </p>
-      <br />
-      <p>
-        The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-        below for those interested. Sections 1.10.32 and 1.10.33 from "de
-        Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
-        original form, accompanied by English versions from the 1914 translation
-        by H. Rackham.
-      </p>
-      <h2 className="p-3 text-3xl">Why do we use it?</h2>
-      <p>
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters, as opposed to using 'Content here, content here', making it
-        look like readable English.
-      </p>
-      <br />
-      <p>
-        Many desktop publishing packages and web page editors now use Lorem
-        Ipsum as their default model text, and a search for 'lorem ipsum' will
-        uncover many web sites still in their infancy. Various versions have
-        evolved over the years, sometimes by accident, sometimes on purpose
-        (injected humour and the like).
-      </p>
-      <h2 className="p-3 text-3xl">Where can I get some?</h2>
-      <p>
-        There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in some form, by injected humour, or
-        randomised words which don't look even slightly believable.
-      </p>
-      <br />
-      <p>
-        If you are going to use a passage of Lorem Ipsum, you need to be sure
-        there isn't anything <em>embarrassing hidden in the middle of text</em>.
-        All the Lorem Ipsum generators on the Internet tend to repeat predefined
-        chunks as necessary.{" "}
-      </p>
-      <br />
-      <a
-        href="https://www.lipsum.com/"
-        className="text-green-500 hover:text-indigo-700"
-      >
-        lipsum.com
-      </a>
-      <br />
-      <p>
-        Uses a dictionary of over 200 Latin words, combined with a handful of
-        model sentence structures, to generate Lorem Ipsum which looks
-        reasonable. The generated Lorem Ipsum is therefore always free from
-        repetition, injected humour, or non-characteristic words etc.
-      </p>
-      <br />
-      <em className="font-extrabold">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis suscipit
-        elementum quam. Vestibulum ante ipsum primis in faucibus orci luctus et
-        ultrices posuere cubilia curae; Sed vitae efficitur nibh. Vivamus
-        lacinia sapien nec lacus porta, id rutrum massa sollicitudin. Morbi
-        consequat massa sed tellus feugiat tempus. Vestibulum arcu velit,
-        elementum tincidunt ligula sed, eleifend tempus dolor. Etiam vitae
-        vestibulum dolor. Aenean semper tempus neque a varius. Suspendisse ac
-        odio eu nunc ornare fringilla. Donec cursus vel lorem ut feugiat.
-      </em>
-    </main>
+    <div className="text-black">
+      {/* Container for the blog post */}
+      <section className="bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-6 py-10">
+          <h1 className="text-2xl font-semibold capitalize text-gray-800 lg:text-3xl dark:text-white">
+            From the blog
+          </h1>
+          <p className="text-sm text-gray-700 dark:text-gray-200">
+            {description}
+          </p>
+          <p className="text-sm text-gray-700 dark:text-gray-200">{tags}</p>
+          <p className="text-sm text-gray-700 dark:text-gray-200">{slug}</p>
+          <div className="mt-8 flex flex-col items-center lg:-mx-6">
+            {/* Image of the blog post */}
+            <img
+              className="h-72 w-full rounded-xl object-cover lg:mx-6 lg:h-96"
+              src={imageUrl ? imageUrl : underdogLogo}
+            />
+            <div className="mt-6 lg:mx-6 lg:mt-0">
+              {/* Date of the blog post */}
+              <p className="text-sm text-gray-500 dark:text-gray-300">
+                {date.toLocaleDateString()}
+              </p>
+
+              {/* Title of the blog post */}
+              <p className="text-xl font-semibold text-gray-800 dark:text-white">
+                {title}
+              </p>
+
+              {/* Content of the blog post */}
+              <div
+                className="mt-3 text-sm text-gray-500 md:text-sm dark:text-gray-300"
+                dangerouslySetInnerHTML={{ __html: post.html }}
+              ></div>
+
+              {/* Author information */}
+              <div className="mt-6 flex items-center">
+                <img
+                  className="h-10 w-10 rounded-full object-cover object-center"
+                  src={authorImage}
+                  alt=""
+                />
+
+                <div className="mx-4">
+                  <p className="text-sm text-gray-700 dark:text-gray-200">
+                    {author}
+                  </p>
+                  <p className="text-sm text-gray-700 dark:text-gray-200">
+                    {published}
+                  </p>
+                  <p className="text-sm text-gray-700 dark:text-gray-200">
+                    {tags}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

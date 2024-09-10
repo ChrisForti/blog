@@ -1,14 +1,14 @@
 import { PostPreview } from "./PostPreview";
-import { data, PostData } from "../content/content";
+import { data, PostData } from "../posts/posts";
 import { Post } from "./Post";
-import { v4 as uuidv4 } from "uuid";
+
 type MainpageProps = {
   selectedPost: number;
 };
 
 const postData = [
-  data.map((post) => {
-    return <PostPreview key={uuidv4()} post={post} />;
+  data.map((post, index) => {
+    return <PostPreview key={post.id} post={post} postIndex={index} />;
   }),
   ...data,
 ];
