@@ -156,10 +156,9 @@ function validateMetadata(metadata: unknown, fileName: string) {
       );
     }
   } catch (error) {
-    if ("message" in (error as Error)) {
+    if (error instanceof Error) {
       console.error(
         "\x1b[34mThere was an error inside of " + fileName + ":\n\x1b[0m",
-        // @ts-expect-error: We already checked for message key on error
         error.message,
       );
     }
