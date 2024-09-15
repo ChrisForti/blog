@@ -12,7 +12,7 @@ export function Header({ setHeaderNavigation }: HeaderProps) {
         className="flex items-center"
       >
         <span className="m-6 text-4xl font-semibold dark:text-teal-600">
-          <a href="/Mainpage">Code & Keel</a>
+          <a href="/Mainpage">Transferable skills</a>
         </span>
       </button>
       <ul>
