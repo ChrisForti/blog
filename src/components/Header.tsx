@@ -4,14 +4,14 @@ type HeaderProps = {
 
 export function Header({ setHeaderNavigation }: HeaderProps) {
   return (
-    <header className="flex items-center justify-between overflow-hidden bg-gray-900 p-5">
+    <header className="flex items-center justify-between overflow-hidden bg-blue-800 p-5 text-teal-600">
       <button
         onClick={() => {
           setHeaderNavigation(0);
         }}
         className="flex items-center"
       >
-        <span className="m-6 text-4xl font-semibold dark:text-teal-600">
+        <span className="font-semibol m-6 text-4xl">
           <a href="/Mainpage">Transferable skills</a>
         </span>
       </button>

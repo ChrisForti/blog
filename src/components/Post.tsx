@@ -19,7 +19,7 @@ export function Post({ post }: PostProps) {
   return (
     <div className="text-black">
       {/* Container for the blog post */}
-      <section className="bg-white dark:bg-gray-900">
+      <section className="light:bg-white dark:bg-gray-900">
         <div className="container mx-auto px-6 py-10">
           <h1 className="text-2xl font-semibold capitalize text-gray-800 lg:text-3xl dark:text-white">
             From the blog
