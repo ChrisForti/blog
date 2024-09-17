@@ -30,7 +30,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
   // };
 
   return (
-    <>
+    <div className="bg-blue-800">
       <button
         className="absolute right-20 top-12 border-black bg-white bg-clip-text p-2 font-bold text-teal-500 md:hidden"
         onClick={toggleSidebar}
@@ -52,7 +52,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
       <aside
         className={
           (isOpen ? "block" : "hidden") +
-          " top-22 absolute left-0 z-50 w-64 bg-white p-4 text-white md:static md:block"
+          " top-22 absolute left-0 z-50 w-64 bg-blue-800 p-4 text-white md:static md:block"
         }
       >
         <div className="mx-auto flex items-center justify-around rounded-lg bg-white px-1">
@@ -86,6 +86,6 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
           </div>
         </div>
       </aside>
-    </>
+    </div>
   );
 }
