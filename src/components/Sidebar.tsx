@@ -55,17 +55,17 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
           " top-22 absolute left-0 z-50 w-64 bg-blue-800 p-4 text-white md:static md:block"
         }
       >
-        <div className="mx-auto flex items-center justify-around rounded-lg bg-white px-1">
+        <div className="mx-auto flex items-center justify-around rounded-lg px-1">
           <input
             type="text"
-            placeholder="search posts"
-            className="w-full rounded-md bg-gray-900 p-2 outline-none"
+            placeholder="Search by tag, or name"
+            className="w-full rounded-md bg-gray-500 p-2 outline-none"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
         <div className="rounded-md bg-white">
-          <h1 className="my-4 cursor-pointer rounded-md border-b-2 bg-white py-2 text-center text-xl text-gray-600">
+          <h1 className="my-4 cursor-pointer rounded-md border-b-2 bg-teal-500 py-2 text-center text-xl text-gray-600">
             Posts
           </h1>
           <div className="list-none rounded-md bg-white text-center">

@@ -3,7 +3,6 @@ import Mylogo from "../assets/CvLogo.png";
 export function Footer() {
   return (
     <div>
-      <hr />
       <footer className="overscroll-none bg-blue-800 pb-4">
         <div className="mx-auto max-w-screen-xl px-4 pt-8 sm:px-6 lg:px-8">
           <div className="sm:flex sm:items-center sm:justify-between">
