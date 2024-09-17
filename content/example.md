@@ -5,6 +5,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blan
 date: 2023-03-04
 slug: example
 author: The Man
+authorImage: "/react.svg"
 ---
 
 # Example
