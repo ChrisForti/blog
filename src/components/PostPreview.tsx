@@ -1,5 +1,6 @@
 import { type PostData } from "../posts/posts";
 import underdogLogo from "../assets/underdog.jpg";
+import reactLogo from "../assets/react.svg";
 
 type PostPreviewProps = {
   post: PostData;
@@ -45,7 +46,7 @@ export function PostPreview(props: PostPreviewProps) {
         <p className="text-sm text-gray-700 dark:text-gray-200">{tags}</p>
         <div className="flex items-center gap-4">
           <img
-            src={authorImage}
+            src={authorImage ? authorImage : reactLogo}
             className="relative inline-block h-12 w-12 !rounded-full object-cover object-center"
           />
           <div>

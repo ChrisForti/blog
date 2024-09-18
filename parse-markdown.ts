@@ -125,6 +125,9 @@ function validateMetadata(metadata: unknown, fileName: string) {
         "\x1b[31mThe markdown must contain a valid slug string.	\x1b[0m",
       );
     }
+    if (imageUrl === null) {
+      throw new Error("\x1b[31mimageUrl must be a string\x1b[0m");
+    }
     if (
       imageUrl &&
       !imageUrl.startsWith("http://") &&
@@ -147,7 +150,7 @@ function validateMetadata(metadata: unknown, fileName: string) {
       !authorImage.startsWith("/")
     ) {
       throw new Error(
-        "\x1b[31mimageUrl must be an absolute URL or a path starting with /\nExample: /images/my-image.jpg for image in public folder\nOr: https://example.com/image.jpg for an external image\x1b[0m",
+        "\x1b[31mauthorImage must be an absolute URL or a path starting with /\nExample: /images/my-image.jpg for image in public folder\nOr: https://example.com/image.jpg for an external image\x1b[0m",
       );
     }
     if (authorImage === null) {

@@ -5,7 +5,6 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blan
 date: 2023-03-04
 slug: test
 author: The Man
-authorImage: "/react.svg"
 ---
 
 # Test File
