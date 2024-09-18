@@ -7,7 +7,6 @@ slug: understanding-typescript
 tags:
   - typescript
   - programming
-imageUrl:
 author: The man
 authorImage: "/Chris.png"
 ---
