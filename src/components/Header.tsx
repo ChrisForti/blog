@@ -4,7 +4,7 @@ type HeaderProps = {
 
 export function Header({ setHeaderNavigation }: HeaderProps) {
   return (
-    <header className="flex items-center justify-between overflow-hidden bg-blue-800 p-5 text-teal-600">
+    <header className="flex items-center justify-between overflow-hidden bg-sky-900 p-5 text-teal-600">
       <button
         onClick={() => {
           setHeaderNavigation(0);
