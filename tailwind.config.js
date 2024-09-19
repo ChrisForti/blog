@@ -2,8 +2,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    // colors: {
+    //colors: {
     // This is for a custom color palette https://tailwindcss.com/docs/customizing-colors
+    //sky: "sky-900",
     //   transparent: 'transparent',
     //   current: 'currentColor',
     //   'white': '#ffffff',
@@ -14,8 +15,7 @@ export default {
     //   'silver': '#ecebff',
     //   'bubble-gum': '#ff77e9',
     //   'bermuda': '#78dcca',
-    // },
-    extend: {},
+    //extend: {},
   },
   plugins: [],
 };
