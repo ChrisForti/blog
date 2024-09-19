@@ -1,5 +1,5 @@
 import { type PostData } from "../posts/posts";
-import underdogLogo from "../assets/underdog.jpg";
+import wetDeck from "../assets/wet-deck.jpg";
 import reactLogo from "../assets/react.svg";
 
 type PostPreviewProps = {
@@ -24,7 +24,7 @@ export function PostPreview(props: PostPreviewProps) {
     <div className="flex flex-col text-gray-700">
       <div className="relative m-0 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
         <img
-          src={imageUrl ? imageUrl : underdogLogo}
+          src={imageUrl ? imageUrl : wetDeck}
           alt="Revolutionizing Our Production Process"
           className="h-full w-full object-cover"
         />
