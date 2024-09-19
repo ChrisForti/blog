@@ -30,7 +30,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
   // };
 
   return (
-    <div className="bg-blue-800">
+    <div className="bg-sky-900">
       <button
         className="absolute right-20 top-12 border-black bg-white bg-clip-text p-2 font-bold text-teal-500 md:hidden"
         onClick={toggleSidebar}
