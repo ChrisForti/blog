@@ -7,7 +7,7 @@ slug: understanding transferrable skills
 tags:
   - Yacht carpentry,
   - programming
-author: The man
+author: Chris
 authorImage: "/Chris.png"
 ---
 
