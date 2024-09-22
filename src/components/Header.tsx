@@ -11,7 +11,7 @@ export function Header({ setHeaderNavigation }: HeaderProps) {
         }}
         className="flex items-center"
       >
-        <span className="font-semibol m-6 text-4xl">
+        <span className="font-semibol m-6 text-5xl">
           <a href="/Mainpage">Transferable skills</a>
         </span>
       </button>

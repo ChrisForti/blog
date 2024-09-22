@@ -58,7 +58,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
         <div className="mx-auto flex items-center justify-around rounded-lg px-1">
           <input
             type="text"
-            placeholder="Search by tag, or name"
+            placeholder="Search by Tag, or Title"
             className="w-full rounded-md bg-gray-500 p-2 outline-none"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
