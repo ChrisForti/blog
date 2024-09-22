@@ -1,6 +1,7 @@
-# Code & Keel Blog
+# Transferable Skills Blog
 
 This is a React Typescript blog that dynamically renders markdown, as post entries. Which will then save old post entries in json format.
+
 - To do this it required me to build a [markdown-parser](https://github.com/ChrisForti/markdown-parser) to parse the markdown so it can be renedered from the json format.
 
 ## Built with
