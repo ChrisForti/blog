@@ -39,11 +39,11 @@ export function PostPreview(props: PostPreviewProps) {
         >
           {title}
         </a>
-        <p className="text-sm text-gray-700 dark:text-gray-200">{slug}</p>
+        <p className="text-sm text-gray-900 dark:text-gray-200">{slug}</p>
         <p className="mb-8 block font-sans text-base font-normal leading-relaxed !text-gray-500 text-inherit antialiased">
           {description}
         </p>
-        <p className="text-sm text-gray-700 dark:text-gray-200">{tags}</p>
+        <p className="text-sm text-gray-900 dark:text-gray-200">{tags}</p>
         <div className="flex items-center gap-4">
           <img
             src={authorImage ? authorImage : reactLogo}
