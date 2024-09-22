@@ -1,7 +1,7 @@
 ---
 title: Scripts or jigs
 published: true
-description: In the boat builder world what we refer to as jigs. Is commonly refered to a script, or shell scripting in the world of binary.
+description: In the boat building world what we refer to as a jig. Is commonly refered to as a script, or shell scripting in the world of binary.
 date: 2024-03-04
 slug: understanding transferrable skills
 tags:
