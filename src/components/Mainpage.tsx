@@ -15,7 +15,7 @@ const postData = [
 
 export function Mainpage({ selectedPost }: MainpageProps) {
   return (
-    <main className="container m-0 flex h-[calc(100vh_-_12.5rem)] flex-col overflow-scroll bg-white p-4">
+    <main className="light:bg-white container m-0 flex h-[calc(100vh_-_12.5rem)] flex-col overflow-scroll p-4 dark:bg-gray-500">
       {selectedPost > 0 ? (
         <Post post={postData[selectedPost] as PostData} />
       ) : (
