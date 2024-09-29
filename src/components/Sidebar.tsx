@@ -32,10 +32,11 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
   return (
     <div className="bg-sky-900">
       <button
-        className="absolute right-20 top-12 border-black bg-white bg-clip-text p-2 font-bold text-teal-500 md:hidden"
+        className="right-19 absolute top-20 bg-clip-text p-2 text-teal-500 md:hidden"
         onClick={toggleSidebar}
       >
-        <svg
+        Sidebar
+        {/* <svg
           className="h-6 w-6"
           fill="none"
           viewBox="0 0 24 24"
@@ -47,7 +48,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
             stroke-width="2"
             d="M4 6h16M4 12h16m-7 6h7"
           />
-        </svg>
+        </svg> */}
       </button>
       <aside
         className={
