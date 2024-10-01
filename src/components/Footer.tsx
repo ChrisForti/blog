@@ -11,13 +11,13 @@ export function Footer() {
                 <img
                   className="rounded-full"
                   src={Mylogo}
-                  width="50"
-                  height="50"
+                  width="60"
+                  height="60"
                 />
               </a>
             </div>
-            <p className="mt-4 text-center text-sm text-teal-300 lg:mt-0 lg:text-right">
-              T&C &nbsp; Career &nbsp; Privacy & Policy &nbsp; Developers
+            <p className="text-medium mb-3 mt-4 text-center text-teal-300 lg:mt-0 lg:text-right">
+              T&C &nbsp; Code vessel &nbsp; Developers
             </p>
           </div>
         </div>
