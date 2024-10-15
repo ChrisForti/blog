@@ -4,9 +4,10 @@ type HeaderProps = {
 
 export function Header({ setHeaderNavigation }: HeaderProps) {
   return (
-    <header className="flex items-center justify-between overflow-hidden bg-sky-900 p-6 text-teal-600">
-      <button
+    <header className="justify-between overflow-hidden bg-sky-900 p-6 px-4 py-2 text-center text-teal-600 sm:text-center lg:text-right">
+      <button //"mx-auto px-4 py-2 text-center sm:text-left md:text-center "
         onClick={() => {
+          //    <header className="flex items-center justify-between overflow-hidden bg-sky-900 p-6 text-teal-600">
           setHeaderNavigation(0);
         }}
         className="flex"
