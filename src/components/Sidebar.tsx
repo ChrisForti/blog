@@ -53,7 +53,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
       <aside
         className={
           (isOpen ? "block" : "hidden") +
-          " top-22 absolute left-0 z-50 w-64 bg-sky-900 p-4 text-white md:static md:block"
+          " top-22 absolute left-0 z-50 w-64 bg-sky-900 p-2 text-white md:static md:block"
         }
       >
         <div className="mx-auto flex items-center justify-around rounded-lg px-1">
