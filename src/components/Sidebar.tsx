@@ -32,7 +32,7 @@ export function Sidebar({ setSelectedPost }: SidebarProps) {
   return (
     <div className="bg-sky-900">
       <button
-        className="right-19 absolute top-20 bg-clip-text p-2 text-teal-500 md:hidden"
+        className="absolute top-20 bg-clip-text p-2 text-teal-500 md:hidden"
         onClick={toggleSidebar}
       >
         Sidebar
