@@ -1,6 +1,6 @@
 import type { PostData } from "../posts/posts";
 import reactLogo from "../assets/react.svg";
-import wetDeckH from "../assets/wet-deck-hatch.jpg";
+import wetDeck from "../assets/wet-deck.jpg";
 
 type PostProps = { post: PostData };
 
@@ -34,7 +34,7 @@ export function Post({ post }: PostProps) {
             {/* Image of the blog post */}
             <img
               className="h-72 w-full rounded-xl object-cover lg:mx-6 lg:h-96"
-              src={imageUrl ? imageUrl : wetDeckH}
+              src={imageUrl ? imageUrl : wetDeck}
             />
             <div className="mt-6 lg:mx-6 lg:mt-0">
               {/* Date of the blog post */}
