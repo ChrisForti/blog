@@ -2,14 +2,14 @@
 title: Scripts or jigs
 published: true
 description:
-date: 2024-03-04
+date: 2024-10-22
 slug: understanding transferrable skills
+imageUrl: "/hatch-fix.jpg"
 tags:
   - Yacht carpentry,
   - Shellscripting
 author: Chris
 authorImage: "/Chris.png"
-imageUrl: "/hatch-fix.jpg"
 ---
 
 # Content
