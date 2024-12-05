@@ -17,12 +17,10 @@ export function Post({ post }: PostProps) {
     imageUrl,
   } = post.metadata;
   const date = new Date(dateString);
-  // see DOC.md
-  // Base URL for modifying src attributes
-  // const baseUrl = "https://chrisforti.github.io/blog/";
 
-  // // Replace all src attributes within the HTML content
-  // const modifiedHtml = post.html.replaceAll('src="/', `src="${baseUrl}/`);
+  const html = post.html as string;
+  const baseUrl = "https://chrisforti.github.io/blog/";
+  const modifiedHtml = html.replace('src="/', `src="${baseUrl}/`);
 
   return (
     <div className="text-black">
@@ -47,6 +45,7 @@ export function Post({ post }: PostProps) {
               {/* Date of the blog post */}
               <p className="text-sm text-gray-500 dark:text-gray-300">
                 {date.toLocaleDateString()}
+                {modifiedHtml}
               </p>
 
               {/* Title of the blog post */}
@@ -57,7 +56,7 @@ export function Post({ post }: PostProps) {
               {/* Content of the blog post */}
               <div
                 className="mt-3 text-sm text-gray-500 md:text-sm dark:text-gray-300"
-                dangerouslySetInnerHTML={{ __html: post.html }}
+                dangerouslySetInnerHTML={{ __html: html }}
 
                 // use replace all to rewrite src tags (string.replaceAll())
               ></div>
