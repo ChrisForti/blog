@@ -40,6 +40,12 @@ export function Post({ post }: PostProps) {
             <img
               className="h-72 w-full rounded-xl object-cover lg:mx-6 lg:h-96"
               src={imageUrl ? imageUrl : wetDeck}
+              // src={authorImage ? authorImage : reactLogo}
+              // alt=""
+              // onLoadCapture={() => console.log(`Loaded: ${authorImage}`)}
+              // onErrorCapture={() =>
+              //   console.error(`Failed to load: ${authorImage}`)
+              // }
             />
             <div className="mt-6 lg:mx-6 lg:mt-0">
               {/* Date of the blog post */}

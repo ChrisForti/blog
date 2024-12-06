@@ -167,5 +167,6 @@ function validateMetadata(metadata: unknown, fileName: string) {
     }
     return false;
   }
+
   return true;
 }
