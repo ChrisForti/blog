@@ -4,7 +4,7 @@ published: true
 description: Explaining some of the similarities in yacht jigs, and shell scripts.
 date: 2024-10-22
 slug: understanding transferrable skills
-imageUrl: "/chris.jpg"
+imageUrl: "/Chris.png"
 tags:
   - Yacht carpentry,
   - Shellscripting

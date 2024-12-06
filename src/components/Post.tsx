@@ -20,7 +20,7 @@ export function Post({ post }: PostProps) {
 
   const html = post.html as string;
   const baseUrl = "https://chrisforti.github.io/blog/";
-  const modifiedHtml = html.replaceAll('src="/', `src="${baseUrl}/`);
+  const modifiedHtml = html.replaceAll('src="//g', `src="${baseUrl}/`);
 
   return (
     <div className="text-black">
