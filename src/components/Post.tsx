@@ -20,7 +20,7 @@ export function Post({ post }: PostProps) {
 
   const html = post.html as string;
   const baseUrl = "https://chrisforti.github.io/blog/";
-  const modifiedHtml = html.replace('src="/', `src="${baseUrl}/`);
+  const modifiedHtml = html.replaceAll('src="/', `src="${baseUrl}/`);
 
   return (
     <div className="text-black">
@@ -56,7 +56,7 @@ export function Post({ post }: PostProps) {
               {/* Content of the blog post */}
               <div
                 className="mt-3 text-sm text-gray-500 md:text-sm dark:text-gray-300"
-                dangerouslySetInnerHTML={{ __html: html }}
+                dangerouslySetInnerHTML={{ __html: post.html }}
 
                 // use replace all to rewrite src tags (string.replaceAll())
               ></div>
