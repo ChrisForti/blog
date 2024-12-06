@@ -56,8 +56,8 @@ export function Post({ post }: PostProps) {
               {/* Content of the blog post */}
               <div
                 className="mt-3 text-sm text-gray-500 md:text-sm dark:text-gray-300"
-                dangerouslySetInnerHTML={{ __html: post.html }}
-
+                dangerouslySetInnerHTML={{ __html: modifiedHtml }}
+                // src={imageUrl}
                 // use replace all to rewrite src tags (string.replaceAll())
               ></div>
 
