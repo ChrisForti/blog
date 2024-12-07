@@ -11,8 +11,6 @@ author: Chris
 authorImage: "/Chris.png"
 ---
 
-# Content
-
 ## Introduction
 
 Writing a blog post on the similarities between using jigs/patterns to build a boat and shell scripting or automation in general can be a fascinating topic that draws interesting parallels between two seemingly different fields. Here are some points you may consider including in your blog post:
