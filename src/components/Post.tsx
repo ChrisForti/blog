@@ -51,7 +51,7 @@ export function Post({ post }: PostProps) {
               {/* Date of the blog post */}
               <p className="text-sm text-gray-500 dark:text-gray-300">
                 {date.toLocaleDateString()}
-                {modifiedHtml}
+                {/* {modifiedHtml} */}
               </p>
 
               {/* Title of the blog post */}
@@ -63,7 +63,7 @@ export function Post({ post }: PostProps) {
               <div
                 className="mt-3 text-sm text-gray-500 md:text-sm dark:text-gray-300"
                 dangerouslySetInnerHTML={{ __html: modifiedHtml }}
-                // src={imageUrl}
+
                 // use replace all to rewrite src tags (string.replaceAll())
               ></div>
 
