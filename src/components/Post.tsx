@@ -18,6 +18,7 @@ export function Post({ post }: PostProps) {
   } = post.metadata;
   const date = new Date(dateString);
 
+  // replaceAll() logic
   const html = post.html as string;
   const baseUrl = "https://chrisforti.github.io/blog/";
   const modifiedHtml = html.replaceAll('src="//g', `src="${baseUrl}/`);
@@ -39,12 +40,12 @@ export function Post({ post }: PostProps) {
             {/* Image of the blog post */}
             <img
               className="h-72 w-full rounded-xl object-cover lg:mx-6 lg:h-96"
-              // src={imageUrl ? imageUrl : wetDeck}
-              src={authorImage ? authorImage : reactLogo}
+              src={imageUrl ? imageUrl : wetDeck}
+              // src={authorImage ? authorImage : reactLogo}
               alt=""
-              onLoadCapture={() => console.log(`Loaded: ${authorImage}`)}
+              onLoadCapture={() => console.log(`Loaded: ${imageUrl}`)}
               onErrorCapture={() =>
-                console.error(`Failed to load: ${authorImage}`)
+                console.error(`Failed to load: ${imageUrl}`)
               }
             />
             <div className="mt-6 lg:mx-6 lg:mt-0">
