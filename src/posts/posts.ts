@@ -1,6 +1,7 @@
 import postsJson from "./posts.json";
 
 export type PostData = {
+  title: string;
   metadata: Metadata;
   html: TrustedHTML;
   id: string;
