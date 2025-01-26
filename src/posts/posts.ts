@@ -1,14 +1,13 @@
 import postsJson from "./posts.json";
 
 export type PostData = {
-  title: string;
+  title?: string;
   metadata: Metadata;
   html: TrustedHTML;
   id: string;
 };
 
 type Metadata = {
-  title: string;
   published: boolean;
   description: string;
   date: string;
